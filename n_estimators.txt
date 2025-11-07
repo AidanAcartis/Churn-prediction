@@ -1,0 +1,32 @@
+---- First Try ----
+rf_model = RandomForestClassifier(
+    n_estimators=200,
+    max_depth=8,
+    min_samples_leaf=5,      
+    max_features='log2',
+    random_state=42,
+    class_weight='balanced',
+    n_jobs=4  # utilise les 4 cœurs CPU
+)
+
+=> === Cross-Validation Results ===
+roc_auc : train mean = 0.9308, val mean = 0.8521
+f1 : train mean = 0.7167, val mean = 0.6187
+accuracy : train mean = 0.8732, val mean = 0.8331
+
+---- Second Try ----
+rf_model = RandomForestClassifier(
+    n_estimators=300,
+    max_depth=8,
+    min_samples_leaf=5,      
+    max_features='log2',
+    random_state=42,
+    class_weight='balanced',
+    n_jobs=4  # utilise les 4 cœurs CPU
+)
+
+=> === Cross-Validation Results ===
+roc_auc : train mean = 0.9314, val mean = 0.8525
+f1 : train mean = 0.7173, val mean = 0.6137
+accuracy : train mean = 0.8733, val mean = 0.8308
+

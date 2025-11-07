@@ -1,0 +1,98 @@
+Now change on `min_samples_leaf`:
+
+---- First try ----
+rf_model = RandomForestClassifier(
+    n_estimators=200,
+    max_depth=8,
+    min_samples_leaf=5,      
+    max_features='sqrt',
+    random_state=42,
+    class_weight='balanced',
+    n_jobs=4  # utilise les 4 cœurs CPU
+)
+
+=>   roc_auc : train mean = 0.9308, val mean = 0.8521
+     f1      : train mean = 0.7167, val mean = 0.6187
+     accuracy: train mean = 0.8732, val mean = 0.8331
+
+---- Second try ----
+rf_model = RandomForestClassifier(
+    n_estimators=200,
+    max_depth=8,
+    min_samples_leaf=10,      
+    max_features='sqrt',
+    random_state=42,
+    class_weight='balanced',
+    n_jobs=4  # utilise les 4 cœurs CPU
+)
+
+=> === Cross-Validation Results ===
+roc_auc : train mean = 0.9218, val mean = 0.8500
+f1 : train mean = 0.6966, val mean = 0.6073
+accuracy : train mean = 0.8599, val mean = 0.8216
+
+
+---- Third Try ----
+rf_model = RandomForestClassifier(
+    n_estimators=200,
+    max_depth=8,
+    min_samples_leaf=20,      
+    max_features='sqrt',
+    random_state=42,
+    class_weight='balanced',
+    n_jobs=4  # utilise les 4 cœurs CPU
+)
+
+=> === Cross-Validation Results ===
+roc_auc : train mean = 0.9064, val mean = 0.8472
+f1 : train mean = 0.6692, val mean = 0.6022
+accuracy : train mean = 0.8417, val mean = 0.8117
+
+---- 4th TRy ----
+rf_model = RandomForestClassifier(
+    n_estimators=200,
+    max_depth=8,
+    min_samples_leaf=15,      
+    max_features='sqrt',
+    random_state=42,
+    class_weight='balanced',
+    n_jobs=4  # utilise les 4 cœurs CPU
+)
+
+=> === Cross-Validation Results ===
+roc_auc : train mean = 0.9137, val mean = 0.8490
+f1 : train mean = 0.6798, val mean = 0.6001
+accuracy : train mean = 0.8493, val mean = 0.8127
+
+---- 5th Try ----
+rf_model = RandomForestClassifier(
+    n_estimators=200,
+    max_depth=8,
+    min_samples_leaf=7,      
+    max_features='sqrt',
+    random_state=42,
+    class_weight='balanced',
+    n_jobs=4  # utilise les 4 cœurs CPU
+)
+
+=> === Cross-Validation Results ===
+roc_auc : train mean = 0.9273, val mean = 0.8514
+f1 : train mean = 0.7087, val mean = 0.6104
+accuracy : train mean = 0.8683, val mean = 0.8267
+
+---- 6th Try ----
+rf_model = RandomForestClassifier(
+    n_estimators=200,
+    max_depth=8,
+    min_samples_leaf=6,      
+    max_features='sqrt',
+    random_state=42,
+    class_weight='balanced',
+    n_jobs=4  # utilise les 4 cœurs CPU
+)
+
+=> === Cross-Validation Results ===
+roc_auc : train mean = 0.9291, val mean = 0.8517
+f1 : train mean = 0.7124, val mean = 0.6056
+accuracy : train mean = 0.8704, val mean = 0.8247
+

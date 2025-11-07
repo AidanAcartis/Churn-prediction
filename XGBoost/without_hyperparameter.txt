@@ -1,0 +1,23 @@
+Train F1-score: 0.8275346053123831
+
+
+Best threshold for minority class: 0.38
+F1-score corresponding: 0.6035
+
+=== Évaluation sur le jeu de validation avec XGBoost ===
+Accuracy : 0.845625
+F1-score : 0.6035313001605136
+Precision: 0.6394557823129252
+Recall   : 0.5714285714285714
+ROC-AUC  : 0.8595701635023998
+
+
+Classification report:
+               precision    recall  f1-score   support
+
+           0       0.89      0.92      0.90      1271
+           1       0.64      0.57      0.60       329
+
+    accuracy                           0.85      1600
+   macro avg       0.77      0.74      0.75      1600
+weighted avg       0.84      0.85      0.84      1600

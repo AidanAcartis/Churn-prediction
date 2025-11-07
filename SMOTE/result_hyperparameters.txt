@@ -1,0 +1,48 @@
+result apres SMOTE sans hyperparameter:
+=== Cross-Validation Results (SMOTE) ===
+roc_auc : train mean = 0.9704, val mean = 0.9534
+f1 : train mean = 0.9060, val mean = 0.8847
+accuracy : train mean = 0.9092, val mean = 0.8893
+
+
+
+Meilleur seuil pour la classe minoritaire: 0.35
+F1-score correspondant: 0.5929
+
+=== 🧪 Évaluation sur le jeu de validation avec seuil optimisé ===
+Accuracy : 0.8
+F1-score : 0.5928753180661578
+ROC-AUC  : 0.8462713943739104
+
+=== Rapport de classification ===
+              precision    recall  f1-score   support
+
+           0       0.92      0.82      0.87      1271
+           1       0.51      0.71      0.59       329
+
+    accuracy                           0.80      1600
+   macro avg       0.71      0.77      0.73      1600
+weighted avg       0.83      0.80      0.81      1600
+
+hyperparameter trouve:
+Best parameters found: {'n_estimators': 800, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 20}
+Best F1-score (CV): 0.9042877080297286
+
+Best threshold for minority class: 0.40
+F1-score corresponding: 0.5895
+
+Avec hyperparameter:
+
+Accuracy: 0.829375
+F1-score: 0.5894736842105263
+ROC-AUC: 0.8401816055615209
+
+Classification report:
+               precision    recall  f1-score   support
+
+           0       0.89      0.89      0.89      1271
+           1       0.58      0.60      0.59       329
+
+    accuracy                           0.83      1600
+   macro avg       0.74      0.74      0.74      1600
+weighted avg       0.83      0.83      0.83      1600

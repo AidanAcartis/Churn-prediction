@@ -1,0 +1,106 @@
+Avant SMOTE :
+Exited
+0    0.794375
+1    0.205625
+Name: proportion, dtype: float64
+
+Après SMOTE :mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiim
+Exited
+1    0.5
+0    0.5
+Name: proportion, dtype: float64
+
+=== Cross-Validation Results (SMOTE) ===
+roc_auc : train mean = 0.9704, val mean = 0.9534
+f1 : train mean = 0.9060, val mean = 0.8847
+accuracy : train mean = 0.9092, val mean = 0.8893
+
+
+
+Meilleur seuil pour la classe minoritaire: 0.35
+F1-score correspondant: 0.5929
+
+=== 🧪 Évaluation sur le jeu de validation avec seuil optimisé ===
+Accuracy : 0.8
+F1-score : 0.5928753180661578
+ROC-AUC  : 0.8462713943739104
+
+=== Rapport de classification ===
+              precision    recall  f1-score   support
+
+           0       0.92      0.82      0.87      1271
+           1       0.51      0.71      0.59       329
+
+    accuracy                           0.80      1600
+   macro avg       0.71      0.77      0.73      1600
+weighted avg       0.83      0.80      0.81      1600
+
+
+
+
+
+
+
+ADASYN:
+Avant ADASYN :
+Exited
+0    0.794375
+1    0.205625
+Name: proportion, dtype: float64
+
+Après ADASYN :
+Exited
+1    0.506743
+0    0.493257
+Name: proportion, dtype: float64
+
+=== Cross-Validation Results (ADASYN) ===
+roc_auc : train mean = 0.9708, val mean = 0.9531
+f1 : train mean = 0.9072, val mean = 0.8829
+accuracy : train mean = 0.9095, val mean = 0.8865
+
+
+
+Meilleur seuil pour la classe minoritaire (ADASYN): 0.40
+F1-score correspondant: 0.5845
+
+=== 🧪 Évaluation sur le jeu de validation ADASYN avec seuil optimisé ===
+Accuracy : 0.81875
+F1-score : 0.5845272206303725
+ROC-AUC  : 0.8437436477512142
+
+=== Rapport de classification ===
+              precision    recall  f1-score   support
+
+           0       0.90      0.87      0.88      1271
+           1       0.55      0.62      0.58       329
+
+    accuracy                           0.82      1600
+   macro avg       0.73      0.75      0.73      1600
+weighted avg       0.83      0.82      0.82      1600
+
+
+NO SMOTE , NO ADASYN :
+=== Cross-Validation Results ===
+roc_auc : train mean = 0.9308, val mean = 0.8521
+f1 : train mean = 0.7167, val mean = 0.6187
+accuracy : train mean = 0.8732, val mean = 0.8331
+
+
+=== 🧪 Évaluation sur le jeu de validation ===
+Accuracy : 0.811875
+F1-score : 0.5904761904761905
+ROC-AUC  : 0.8578650704636275
+
+=== Rapport de classification ===
+              precision    recall  f1-score   support
+
+           0       0.91      0.85      0.88      1271
+           1       0.53      0.66      0.59       329
+
+    accuracy                           0.81      1600
+   macro avg       0.72      0.76      0.73      1600
+weighted avg       0.83      0.81      0.82      1600
+
+
+
