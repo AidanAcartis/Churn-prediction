@@ -88,7 +88,3 @@ pip install -r requirements.txt
 ## 🔗 License
 
 MIT License
-
-
-Veux‑tu que je fasse ça ?
-```
